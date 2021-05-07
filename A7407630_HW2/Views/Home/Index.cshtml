@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "網站首頁";
+}
+
+<div align="center" style="font-family:標楷體">
+    <br />
+    <b class="label label-danger" style="font-size:x-large">網站首頁</b>
+    <br /> <br />
+    <h3>
+        @Html.ActionLink("儲存酒類紀錄", "SaveExpenseIndex", "Drink", null, new { @class = "btn btn-success btn-lg" })       <span>&nbsp;</span>
+        @Html.ActionLink("查詢酒類紀錄", "QueryExpenseIndex", "Drink", null, new { @class = "btn btn-success btn-lg" })      <span>&nbsp;</span>
+        @Html.ActionLink("刪除酒類紀錄", "DeleteExpenseIndex", "Drink", null, new { @class = "btn btn-success btn-lg" })     <span>&nbsp;</span>
+        @Html.ActionLink("管理酒的種類", "ManageExpenseTypeIndex", "Drink", null, new { @class = "btn btn-success btn-lg" })
+    </h3>
+</div>
